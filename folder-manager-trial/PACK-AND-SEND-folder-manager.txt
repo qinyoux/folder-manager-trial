@@ -1,0 +1,30 @@
+哈利 / Windows 文件夹管理系统试用包说明
+
+给同事试用时，建议把以下文件一起打包发过去：
+- file-folder-manager.py
+- build-folder-manager-exe.bat
+- build-folder-manager-simple.bat
+- README-folder-manager-prototype.md
+- TRIAL-GUIDE-folder-manager.md
+
+在 Windows 电脑上打包：
+
+方案 A（推荐）
+1. 安装 Python 3.10 / 3.11 / 3.12 / 3.13 stable
+2. 双击 `build-folder-manager-exe.bat`
+3. 等待完成
+4. 输出文件：`dist\\WindowsFolderManager.exe`
+
+方案 B（简化）
+1. 如果方案 A 因虚拟环境失败，可双击 `build-folder-manager-simple.bat`
+2. 输出文件同样在：`dist\\WindowsFolderManager.exe`
+
+注意：
+- 不建议使用 Python 3.14 alpha / preview
+- 这是 tkinter 桌面程序，Windows exe 需在 Windows 本机打包
+- 打包前脚本已通过 Python 语法检查
+
+建议发给同事的内容：
+- exe 主程序
+- `TRIAL-GUIDE-folder-manager.md` 作为试用说明
+- 如果要保留可追溯源码，再附上 `README-folder-manager-prototype.md`
